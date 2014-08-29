@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScreenTouch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="doubletouch_interval">双击锁屏时间间隔</string>
+	<string name="screenShotEnableText">是否开启三指截屏</string>
+	<string name="interval">小于xx秒</string>
+	<string name="screenShotHint">三指从上往下滑下即可截屏</string>
+	<string name="autoStartEnabled">是否开机自动启动</string>
+	<string name="affectedAppChoose">选择生效的应用</string>
+	<string name="affectedAppHint">目前有xx应用生效</string>
+	<string name="pointsRequire">获取积分</string>
+	<string name="about">关于</string>
+	<string name="exit">退出</string>
+</resources>

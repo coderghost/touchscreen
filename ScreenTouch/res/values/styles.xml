@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+	
+    <!-- circularbead style 设置每个主界面框的风格 -->
+    <style name="list_table">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/list_table_background</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+	<!-- 设置界面框里面每项字符的风格 -->
+	<style name = "item_text">
+	    <item name="android:background">@color/item_string</item>
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:textSize">@dimen/textsize</item>
+	</style>
+	
+	<!-- 设置每项的提示字符的风格 -->
+	<style name="item_sub_text">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:textSize">@dimen/sub_textsize</item>
+	</style>
+	<!-- 定义界面框里面每个可点击项的风格 -->
+	<style name="item_event">
+	    <item name="android:clickable">true</item>
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">@dimen/item_height</item>
+	    <item name="android:paddingLeft">16dip</item>
+	    <item name="android:paddingTop">16dip</item>
+		<item name="android:paddingRight">16dip</item>
+		<item name="android:paddingBottom">8dip</item>
+	</style>
+	
+	<!-- 定义界面框里面每个不可点击项的风格 -->
+	<style name="item_normal">
+	    <item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	
+	<!--设置界面框里面的线的风格  -->
+	<style name="item_line">
+	    <item name="android:background">@color/main_line</item>
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">@dimen/item_line_height</item>
+	</style>
+	
+</resources>

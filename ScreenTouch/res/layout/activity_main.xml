@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dip"
+    android:paddingTop="40dip"
+    android:paddingRight="16dip"
+    android:paddingBottom="40dip" >
+
+    <LinearLayout style="@style/list_table">
+		<!-- 设置双击锁屏时间间隔 -->
+		<RelativeLayout style="@style/item_event"
+		      android:id="@+id/intervalLayout" >
+
+		    <TextView
+		        style="@style/item_text"
+		        android:id="@+id/doubleTouchID"
+		        android:layout_alignParentLeft="true"
+		        android:text="@string/doubletouch_interval"/>
+		    
+		    <TextView
+		        style="@style/item_sub_text"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@id/doubleTouchID"
+		        android:text="@string/interval"/>
+		        
+		</RelativeLayout>
+		<!-- 分割线 -->
+        <View style = "@style/item_line"/>
+        
+        <!-- 设置是否开启三指截屏 -->
+		<RelativeLayout style="@style/item_event" android:id="@+id/screenShotEnableLayout">
+		    <TextView 
+		        style="@style/item_text"
+		        android:id="@+id/screenShotID"
+		        android:layout_alignParentLeft="true"
+		        android:text="@string/screenShotEnableText"/>
+		    
+		    <TextView 
+		        style="@+style/item_sub_text"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@id/screenShotID"
+		        android:text="@string/screenShotHint"/>
+
+		</RelativeLayout>
+	 	<!-- 分割线 -->
+     	<View style = "@style/item_line"/>
+	
+     	<!-- 设置是否开机启动 -->
+     	<RelativeLayout style="@style/item_event" android:id="@+id/autoStartLayout">
+     	    <TextView
+     	        style="@style/item_text"
+     	        android:id="@+id/autoStartID"
+     	        android:text="@string/autoStartEnabled"
+     	        android:layout_centerVertical="true"/>
+     	</RelativeLayout>
+		<!-- 分割线 -->
+     	<View style = "@style/item_line"/>
+     	
+        <!-- 设置生效应用 -->
+     	<RelativeLayout style="@style/item_event" android:id="@+id/chooseAppLayout">
+     	    <TextView 
+     	        style="@style/item_text"
+     	        android:id="@+id/chooseAppID"
+     	        android:text="@string/affectedAppChoose"/>
+     	    
+     	    <TextView
+     	        style="@style/item_sub_text"
+     	        android:id="@+id/affectedAppHintID"
+     	        android:layout_below="@id/chooseAppID"
+     	        android:text="@string/affectedAppHint"/>
+     	    
+     	</RelativeLayout>
+     	<!-- 分割线 -->
+     	<View style = "@style/item_line"/>
+     	
+     	<!-- 获得积分 -->
+     	<RelativeLayout style="@style/item_event" android:id="@+id/pointsLayout">
+     	    <TextView 
+     	        style="@style/item_text"
+     	        android:id="@+id/pointsID"
+     	        android:text="@string/pointsRequire"
+     	        android:layout_centerVertical="true"/>"
+     	
+     	</RelativeLayout>
+     	<!-- 分割线 -->
+     	<View style = "@style/item_line"/>
+     	
+     	<!-- 关于 -->
+     	<RelativeLayout style="@style/item_event" android:id="@+id/aboutLayout">
+     	    <TextView
+     	        style="@style/item_text"
+     	        android:id="@+id/aboutID"
+     	        android:text="@string/about"
+     	        android:layout_centerVertical="true"/>
+     	    
+     	</RelativeLayout>
+     	<!-- 分割线 -->
+     	<View style = "@style/item_line"/>
+     	
+     	<!-- 退出 -->
+     	<RelativeLayout style="@style/item_event" android:id="@+id/exitLayout">
+     		<TextView
+     		    style="@style/item_text"
+     		    android:id="@+id/exitID"
+     		    android:text="@string/exit" 
+     		    android:layout_centerVertical="true"/>
+     	</RelativeLayout>"
+    </LinearLayout>
+</LinearLayout>
